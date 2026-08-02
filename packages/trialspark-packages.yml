@@ -1,0 +1,55 @@
+generated: '2026-07-31'
+method: searched
+source: https://github.com/trialspark + npm registry + PyPI
+notes: >-
+  Formation Bio (GitHub org still named `trialspark`) publishes no API client SDK,
+  because it publishes no public API. The packages below ARE first-party — they are
+  authored/maintained under the trialspark GitHub organization and published to npm
+  and PyPI by the company — but they are general open-source developer utilities
+  (React/testing/GraphQL tooling), not client libraries for a Formation Bio API.
+  For that reason NO `SDKs` pointer is wired in apis.yml: there is no SDK surface to
+  claim. Every repository in the trialspark GitHub organization (27 of 27) is
+  archived as of this probe.
+packages:
+- language: javascript
+  registry: npm
+  name: '@trialspark/react-big-calendar'
+  version: 0.15.1
+  url: https://www.npmjs.com/package/@trialspark/react-big-calendar
+  install: npm install @trialspark/react-big-calendar
+  repository: https://github.com/trialspark/react-big-calendar
+  description: gcal/outlook-like calendar component (fork)
+  official: true
+  api_client: false
+- language: javascript
+  registry: npm
+  name: '@trialspark/getter-to-string'
+  version: 0.1.0
+  url: https://www.npmjs.com/package/@trialspark/getter-to-string
+  install: npm install @trialspark/getter-to-string
+  repository: https://github.com/trialspark/getter-to-string
+  description: Create lodash.get-style strings from an object and a function
+  official: true
+  api_client: false
+- language: javascript
+  registry: npm
+  name: enzyme-context
+  version: 1.2.0
+  url: https://www.npmjs.com/package/enzyme-context
+  install: npm install enzyme-context
+  repository: https://github.com/trialspark/enzyme-context
+  description: Pluggable library simplifying testing of React components that rely
+    on context
+  official: true
+  api_client: false
+- language: python
+  registry: pypi
+  name: graphene-stubs
+  version: '0.16'
+  url: https://pypi.org/project/graphene-stubs/
+  install: pip install graphene-stubs
+  repository: https://github.com/trialspark/graphene-stubs
+  description: Graphene stubs and mypy plugin
+  official: true
+  api_client: false
+sdk_count: 0

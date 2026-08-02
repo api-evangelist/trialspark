@@ -1,0 +1,59 @@
+# Formation Bio
+
+> Formation Bio (formerly TrialSpark, rebranded December 2023) is a New York-based,
+> tech-driven, AI-native pharmaceutical company. It in-licenses and acquires
+> clinical-stage drug assets and develops them through a proprietary AI and software
+> platform rather than discovering molecules itself. Its technology stack is
+> internal-facing: Formation Bio publishes no public developer portal, API
+> documentation, machine-readable API contract, or client SDK.
+
+## Company
+
+- [Formation Bio](https://www.formation.bio/): Corporate site.
+- [About Us](https://www.formation.bio/about-us): Company, leadership and co-founders Ben Liu (CEO) and Linhao Zhang.
+- [Our Model](https://www.formation.bio/our-model): How Formation Bio in-licenses and develops clinical-stage assets.
+- [Technology](https://www.formation.bio/technology): The internal AI platform — Delphi, Atlas, Forge, Apollo, ARK and the Data Platform.
+- [Licensing & Pipeline](https://www.formation.bio/licensing-and-pipeline): Asset licensing and the clinical pipeline.
+- [Clinical Trials](https://www.formation.bio/clinical-trials): Trial programs, with sections for patients, investigators and physicians.
+- [Contact](https://www.formation.bio/contact): Press and corporate inquiries.
+
+## Platform components (internal, not developer-facing)
+
+- Delphi — probability-of-technical-success reasoning, drug value modeling, development-path stress testing.
+- Atlas — screens clinical-stage assets across mechanism of action, trial history and competitive positioning.
+- Forge — autonomously ideates and evaluates thousands of trial-design scenarios (endpoints, populations, combinations).
+- Apollo — trial execution: study startup, enrollment and closeout across sites.
+- ARK — AI orchestration layer connecting 80+ internal systems behind a single governed interface.
+- Data Platform — unified evidence layer over trial data, real-world patient data, literature and standardized ontologies.
+- Muse — AI patient-recruitment system built with Sanofi and OpenAI.
+
+## News
+
+- [Blog](https://www.formation.bio/blog)
+- [Press](https://www.formation.bio/press)
+- [Careers](https://www.formation.bio/careers)
+
+## Code
+
+- [GitHub organization (trialspark)](https://github.com/trialspark): 27 repositories, all archived; general open-source developer tooling, no API client libraries.
+
+## Policies
+
+- [Privacy Policy](https://www.formation.bio/documents/privacy-policy)
+
+## API surface
+
+Formation Bio publishes no public API. Contract discovery on 2026-07-31 probed
+/openapi.json, /openapi.yaml, /swagger.json, /api-docs, /docs, /redoc and /graphql on
+www.formation.bio and app.formation.bio, plus the /.well-known/ discovery namespace
+(security.txt, openid-configuration, oauth-authorization-server, api-catalog,
+ai-plugin.json, agent-card.json, agent.json) on every resolvable host, and
+api./developers./docs./mcp. subdomains. Nothing was found: the root paths return the
+site's HTML not-found shell and the /.well-known/ paths return HTTP 404. No OpenAPI,
+no GraphQL, no MCP server, no A2A agent card, no AsyncAPI, no webhooks.
+
+## Provenance
+
+- generated: 2026-07-31
+- method: generated
+- source: apis.yml + repo artifacts + live probes of www.formation.bio
